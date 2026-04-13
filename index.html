@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Stake | Property Investment</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#564334",
+                        "on-tertiary": "#00344c",
+                        "secondary": "#c1c6d7",
+                        "outline": "#a48c7a",
+                        "secondary-fixed": "#dde2f3",
+                        "tertiary": "#85cfff",
+                        "surface-container-highest": "#31353c",
+                        "tertiary-fixed": "#c7e7ff",
+                        "on-primary-container": "#623200",
+                        "surface-tint": "#ffb77d",
+                        "surface-dim": "#10141a",
+                        "tertiary-fixed-dim": "#85cfff",
+                        "tertiary-container": "#00b5fc",
+                        "inverse-on-surface": "#2d3137",
+                        "on-tertiary-fixed-variant": "#004c6c",
+                        "secondary-fixed-dim": "#c1c6d7",
+                        "inverse-surface": "#dfe2eb",
+                        "on-secondary-fixed": "#161c27",
+                        "on-tertiary-fixed": "#001e2e",
+                        "surface": "#10141a",
+                        "primary-fixed": "#ffdcc3",
+                        "on-surface": "#dfe2eb",
+                        "surface-container-low": "#181c22",
+                        "on-primary-fixed": "#2f1500",
+                        "on-error-container": "#ffdad6",
+                        "surface-variant": "#31353c",
+                        "surface-bright": "#353940",
+                        "background": "#10141a",
+                        "on-secondary": "#2a303d",
+                        "primary": "#ffb77d",
+                        "primary-fixed-dim": "#ffb77d",
+                        "error-container": "#93000a",
+                        "inverse-primary": "#904d00",
+                        "surface-container-lowest": "#0a0e14",
+                        "on-primary-fixed-variant": "#6e3900",
+                        "on-primary": "#4d2600",
+                        "surface-container": "#1c2026",
+                        "on-error": "#690005",
+                        "surface-container-high": "#262a31",
+                        "on-secondary-container": "#b3b8c8",
+                        "on-secondary-fixed-variant": "#414754",
+                        "on-tertiary-container": "#004360",
+                        "primary-container": "#ff8c00",
+                        "error": "#ffb4ab",
+                        "on-surface-variant": "#ddc1ae",
+                        "on-background": "#dfe2eb",
+                        "secondary-container": "#434957"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #dfe2eb;
+        }
+
+        .font-headline {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .hero-gradient-overlay {
+            background: linear-gradient(180deg, rgba(13, 17, 23, 0.7) 0%, rgba(13, 17, 23, 0.9) 100%);
+        }
+
+        .btn-gradient {
+            background: linear-gradient(90deg, #ff8c42 0%, #ff9d2e 100%);
+        }
+
+        .card-glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .text-shadow-lg {
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body class="selection:bg-primary/30 antialiased">
+    <!-- Top Navigation Bar -->
+    <nav class="absolute top-0 w-full z-50">
+        <div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+            <div class="flex items-center gap-12">
+                <a class="flex items-center gap-2 text-2xl font-extrabold tracking-tight text-white font-headline"
+                    href="#">
+                    <div class="w-8 h-8 rounded-full border-4 border-primary flex items-center justify-center">
+                        <div class="w-3 h-3 bg-primary rounded-full"></div>
+                    </div>
+                    Stake
+                </a>
+                <div class="hidden md:flex gap-8 items-center font-headline font-semibold text-sm">
+                    <a class="text-white/80 hover:text-white transition-colors" href="#">Properties</a>
+                    <a class="text-white/80 hover:text-white transition-colors" href="#">Digital Assets</a>
+                    <a class="text-white/80 hover:text-white transition-colors" href="#">Stake &amp; Earn</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-6 font-headline font-semibold text-sm">
+                <button class="text-white hover:text-primary transition-all">Login</button>
+                <button
+                    class="px-7 py-2.5 btn-gradient rounded-xl text-white shadow-lg shadow-primary/20 active:scale-95 transition-all">Sign
+                    Up</button>
+            </div>
+        </div>
+    </nav>
+    <main class="relative pt-32 pb-20">
+        <!-- Background Asset -->
+        <div class="absolute inset-0 z-[-1]">
+            <img alt="" class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida/ADBb0ujpLBzJM95GKXFJw5mRHw0t5XnS61Crbi0kXJtd__aSvyPeBf8Rl_0Fyd4AFYLuodgoQXv-pCuQWMIp9GHxQNbMrFUA7CHaW_1N_7dNp4EpO7DNI7ti4PRLUiM6ErHK7s6exSsQv2FULkviYNjaCtK458MRN6OmSTXFtd-LwvvAy-NoIepFWkPEEXxhmHnJO_sQHQFGU0obN9pDUHCYThGBtTBr7WNc9vDXxyhKjZgrzn4Dt55pJ24tbgf7WfryZF6IVNJYjCipUg" />
+            <div class="hero-gradient-overlay absolute inset-0"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-8 text-center space-y-12 mb-16">
+            <div class="space-y-6 max-w-4xl mx-auto">
+                <h1 class="text-6xl lg:text-7xl font-extrabold font-headline leading-[1] tracking-tight text-white">
+                    Discover <span class="text-[#ff8c42]">high-growth</span><br />property investments
+                </h1>
+                <p class="text-lg text-white/70 max-w-2xl mx-auto leading-relaxed font-medium">
+                    Join the CEG Equity Token batch. Start building your portfolio with fractional ownership of global
+                    assets.
+                </p>
+                <div class="pt-4">
+                    <button
+                        class="px-10 py-4 btn-gradient rounded-xl text-white font-bold text-lg shadow-2xl shadow-primary/30 flex items-center gap-3 mx-auto transition-transform hover:scale-105 active:scale-95">
+                        Start Earning Now
+                        <span class="material-symbols-outlined font-bold">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Center Visual Section -->
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Left Puzzle Area -->
+            <div class="lg:col-span-8 relative">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+                    <img alt="Puzzle Frame" class="w-full h-auto"
+                        src="https://lh3.googleusercontent.com/aida/ADBb0ugjtOiyKaXzEl8OrBQmKGHNuCP8MNaauPNIUmdasZUoCZUDyYR7uUIRzLYTvcJDJYwIvoFq0DPuFzPk_NiysMvNTG-UZVQmCgkZN5gesAwb3VikErhpTIVJXHttdCCRoepB5Ra3zoUKHwPD_rgHCaq-MXn5lIP3BR16FK0Ts6XNY7TrwIFfH0thcuSeIaw-53TA6Zy81w4-1eR3DqkUaT_tUIV891b_fY7kakihhk21Cxa3jaGqWrWabwQp0nGQDNDXh7jHgfS1Mw" />
+                    <!-- Floating Piece -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <img alt="Puzzle Piece" class="w-24 md:w-32 lg:w-40 drop-shadow-2xl translate-x-2 translate-y-4"
+                            src="https://lh3.googleusercontent.com/aida/ADBb0uhk0XEyiXZMLtYeonyYB8ESAW227Y3eZh28t80Bl-Sno_94bKW1t4Rau3qkpDEHtWTFLG_Heca5OW3s0Zsm-2B_VkP9HtucVMU-IeScpvKp1pPjTpfpCUFOxyJr0b3344Z_kRYjVz5ebcMS4BFwU9cPitr3hlc9fv6JYyXumocT_BGzpftl0cu8iPhIpA7qyo98UpSEJoZ7VtaULom4NHinnVbUywopiaXVL2EEpqRLxFKI5DzL-E3j2hXxtruuuin1wGnVRlIFWg" />
+                    </div>
+                </div>
+                <!-- Arrow Indicator -->
+                <div class="absolute -right-8 top-1/2 -translate-y-1/2 hidden xl:block">
+                    <img alt="Arrow" class="w-48 opacity-90"
+                        src="https://lh3.googleusercontent.com/aida/ADBb0uih_b0l1PnPjS6IE3Pz-jixt3nmEN6Tak4LleUc_Nip4EG878AYQv79QALcCqVSIhJqdu1dfiHF65ONpfzOMrbgRJQLT556HxGfUdkm3M1InspOWH0L2ldeAOvuDVOqIqFcOGm3jTX3LLmqxlN1fnvRl8VnKsMBVdLk8RUVEXe-FOsps8LNrA_hLtkRB3sFg3Oq0CabqXw2nza2ZvLfy_5cIdySWpW721DiV3bdI6WLD3NJQTe80odFtOy-5BQjs4IFk-KESx7h5g" />
+                </div>
+            </div>
+            <!-- Right Info Area -->
+            <div class="lg:col-span-4 space-y-8 pl-4">
+                <div class="space-y-2">
+                    <h2 class="text-5xl font-extrabold font-headline leading-[1.1] text-white">
+                        Access premium property ownership <span class="text-[#ff8c42]">for $150</span>
+                    </h2>
+                </div>
+                <div class="bg-[#1a1f26]/80 backdrop-blur-md p-6 rounded-2xl border border-white/5 shadow-xl max-w-xs">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-6 h-6 rounded-full border-2 border-[#ff8c42] flex items-center justify-center">
+                            <div class="w-1.5 h-1.5 bg-[#ff8c42] rounded-full"></div>
+                        </div>
+                        <span class="text-xs font-bold text-white/60 uppercase tracking-wider">All Time Returns</span>
+                    </div>
+                    <div class="flex items-end justify-between">
+                        <div class="text-3xl font-headline font-bold text-white">AED 165,000</div>
+                        <div class="text-[#4caf50] text-sm font-bold mb-1">+111%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Price Progression Section -->
+        <div class="max-w-7xl mx-auto px-8 mt-24">
+            <div class="bg-[#1a1f26]/40 backdrop-blur-xl rounded-[2.5rem] p-10 border border-white/5 shadow-2xl">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
+                    <h2 class="text-2xl font-headline font-extrabold text-[#ff8c42]">Price Progression (200 Tokens)</h2>
+                    <div class="flex gap-2">
+                        <span
+                            class="px-4 py-1.5 bg-[#0d1117] border border-white/10 rounded-lg text-[10px] font-bold text-white/50 uppercase tracking-widest">Sold
+                            Out 1-3</span>
+                        <span
+                            class="px-4 py-1.5 bg-[#4caf50]/20 border border-[#4caf50]/40 rounded-lg text-[10px] font-bold text-[#4caf50] uppercase tracking-widest">Active
+                            4</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <!-- Batch Items -->
+                    <div
+                        class="bg-[#0d1117]/60 p-6 rounded-2xl border border-white/5 hover:border-white/10 transition-colors">
+                        <div class="text-[10px] text-white/40 font-bold mb-4 uppercase">Batch 1</div>
+                        <div class="text-xl font-headline font-bold text-white">$4,000</div>
+                    </div>
+                    <div
+                        class="bg-[#0d1117]/60 p-6 rounded-2xl border border-white/5 hover:border-white/10 transition-colors">
+                        <div class="text-[10px] text-white/40 font-bold mb-4 uppercase">Batch 2</div>
+                        <div class="text-xl font-headline font-bold text-white">$4,250</div>
+                    </div>
+                    <div
+                        class="bg-[#0d1117]/60 p-6 rounded-2xl border border-white/5 hover:border-white/10 transition-colors">
+                        <div class="text-[10px] text-white/40 font-bold mb-4 uppercase">Batch 3</div>
+                        <div class="text-xl font-headline font-bold text-white">$4,500</div>
+                    </div>
+                    <!-- Active Batch -->
+                    <div
+                        class="bg-[#0d1117]/60 p-6 rounded-2xl ring-2 ring-[#ff8c42] shadow-2xl shadow-primary/10 relative transition-transform hover:-translate-y-1">
+                        <div class="text-[10px] text-[#ff8c42] font-bold mb-4 uppercase">Batch 4</div>
+                        <div class="text-xl font-headline font-bold text-[#ff8c42]">$4,750</div>
+                    </div>
+                    <div class="bg-[#0d1117]/60 p-6 rounded-2xl border border-white/5 opacity-50">
+                        <div class="text-[10px] text-white/40 font-bold mb-4 uppercase">Batch 5</div>
+                        <div class="text-xl font-headline font-bold text-white">$5,000</div>
+                    </div>
+                    <div class="bg-[#0d1117]/60 p-6 rounded-2xl border border-white/5 opacity-50">
+                        <div class="text-[10px] text-white/40 font-bold mb-4 uppercase">Batch 6</div>
+                        <div class="text-xl font-headline font-bold text-white">$5,250</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full py-16 px-8 border-t border-white/5 bg-[#0d1117]">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex flex-col items-center md:items-start gap-3">
+                <a class="flex items-center gap-2 text-xl font-extrabold text-white font-headline" href="#">
+                    <div class="w-6 h-6 rounded-full border-[3px] border-primary flex items-center justify-center">
+                        <div class="w-2 h-2 bg-primary rounded-full"></div>
+                    </div>
+                    Stake
+                </a>
+                <p class="font-medium text-xs text-white/40 tracking-wide">© 2024 STAKE. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div
+                class="flex flex-wrap justify-center gap-10 font-headline font-semibold text-xs uppercase tracking-widest">
+                <a class="text-white/40 hover:text-white transition-colors" href="#">Privacy Policy</a>
+                <a class="text-white/40 hover:text-white transition-colors" href="#">Terms</a>
+                <a class="text-white/40 hover:text-white transition-colors" href="#">Disclosure</a>
+                <a class="text-white/40 hover:text-white transition-colors" href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
