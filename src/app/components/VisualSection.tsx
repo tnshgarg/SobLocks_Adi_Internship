@@ -18,7 +18,7 @@ const VisualSection = () => {
                     <img
                         alt="Puzzle Frame"
                         className="w-full h-full object-cover"
-                        src="https://lh3.googleusercontent.com/aida/ADBb0ugjtOiyKaXzEl8OrBQmKGHNuCP8MNaauPNIUmdasZUoCZUDyYR7uUIRzLYTvcJDJYwIvoFq0DPuFzPk_NiysMvNTG-UZVQmCgkZN5gesAwb3VikErhpTIVJXHttdCCRoepB5Ra3zoUKHwPD_rgHCaq-MXn5lIP3BR16FK0Ts6XNY7TrwIFfH0thcuSeIaw-53TA6Zy81w4-1eR3DqkUaT_tUIV891b_fY7kakihhk21Cxa3jaGqWrWabwQp0nGQDNDXh7jHgfS1Mw"
+                        src="/Frame.png"
                     />
                     {/* Floating Piece */}
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -36,7 +36,7 @@ const VisualSection = () => {
                             }}
                             alt="Puzzle Piece"
                             className="w-32 md:w-44 lg:w-56 drop-shadow-2xl -translate-x-8 translate-y-32"
-                            src="https://lh3.googleusercontent.com/aida/ADBb0uhk0XEyiXZMLtYeonyYB8ESAW227Y3eZh28t80Bl-Sno_94bKW1t4Rau3qkpDEHtWTFLG_Heca5OW3s0Zsm-2B_VkP9HtucVMU-IeScpvKp1pPjTpfpCUFOxyJr0b3344Z_kRYjVz5ebcMS4BFwU9cPitr3hlc9fv6JYyXumocT_BGzpftl0cu8iPhIpA7qyo98UpSEJoZ7VtaULom4NHinnVbUywopiaXVL2EEpqRLxFKI5DzL-E3j2hXxtruuuin1wGnVRlIFWg"
+                            src="/jigsaw.png"
                         />
                     </div>
                     {/* Bottom transparency gradient */}
@@ -53,7 +53,7 @@ const VisualSection = () => {
                     <img
                         alt="Arrow"
                         className="w-72"
-                        src="https://lh3.googleusercontent.com/aida/ADBb0uih_b0l1PnPjS6IE3Pz-jixt3nmEN6Tak4LleUc_Nip4EG878AYQv79QALcCqVSIhJqdu1dfiHF65ONpfzOMrbgRJQLT556HxGfUdkm3M1InspOWH0L2ldeAOvuDVOqIqFcOGm3jTX3LLmqxlN1fnvRl8VnKsMBVdLk8RUVEXe-FOsps8LNrA_hLtkRB3sFg3Oq0CabqXw2nza2ZvLfy_5cIdySWpW721DiV3bdI6WLD3NJQTe80odFtOy-5BQjs4IFk-KESx7h5g"
+                        src="/arrow.png"
                     />
                 </motion.div>
             </motion.div>
